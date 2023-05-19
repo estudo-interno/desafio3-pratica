@@ -12,7 +12,7 @@ config_s2i
 
 echo "---> Installing application source"
 
-DATE=date "+%d/%m/%Y"
+DATE=$(date "+%d/%m/%Y")
 
 echo "info2 - Page built on $DATE" >> /tmp/src/info2.html
 
