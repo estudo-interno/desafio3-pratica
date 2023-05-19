@@ -12,13 +12,13 @@ config_s2i
 
 echo "---> Installing application source"
 
-build_date=date "+%d/%m/%Y"
+DATE=date "+%d/%m/%Y"
 
-echo "info2 - Page built on $build_date" >> /tmp/src/info2.html
+echo "info2 - Page built on $DATE" >> /tmp/src/info2.html
 
 cp /tmp/src/*.html ./
 
-echo "info - Page built on $build_date" >> ./info.html
+echo "info - Page built on $DATE" >> ./info.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############
